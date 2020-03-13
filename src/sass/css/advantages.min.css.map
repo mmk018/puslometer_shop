@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,AAAC,CACR,UAAU,CAAE,KAAK,CACjB,gBAAgB,CAAE,OAAO,CAE5B",
+    "sources": [
+        "../blocks/advantages.scss"
+    ],
+    "names": [],
+    "file": "advantages.min.css"
+}
