@@ -26,3 +26,16 @@
     }
     
 }
+@media screen and (max-width:920px) {
+    .button {
+        width: 125px;
+        font-size: 10px;
+    }
+    .button_main {
+        width: 172px;
+        font-size: 11px;
+    }
+    .button_submit {
+        width: 100%;
+    }
+}
