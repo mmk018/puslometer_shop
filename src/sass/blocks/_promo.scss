@@ -57,3 +57,54 @@
     
 
 }
+@media screen and (max-width:920px) {
+    
+    
+    
+    .header {
+       &__official {
+           display: none;
+       }
+       &__phone {
+           font-size: 14px;
+       }
+    }
+    .header__contacts
+         .header__phone {
+        
+            font-size: 14px;
+    }
+    .button {
+            /* display: none; */
+            font-size: 12px;
+            /* padding: 2px 5px; */
+            height: 20px;
+            width: 122px;
+            padding: 0;
+
+     }
+    .promo {
+        &__wrapper {
+            display: block;
+            text-align: center;
+        }
+        &__header {
+            font-size: 34px;
+        }
+        &__icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        
+        
+    } 
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
+       
+}
