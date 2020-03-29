@@ -1,0 +1,39 @@
+.comments .title {
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.comment-box {
+    &-item {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        &-img {
+            width: 169px;
+            height: 169px;
+        }
+        &-descr {
+            margin-left: 62px;
+            max-width: 650px; 
+            
+            &-name {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &-marathon {
+                color: #646464;
+                font-size: 14px;
+                font-weight: 300;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            &-p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+
+    }
+}
