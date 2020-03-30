@@ -120,6 +120,23 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+49 999-999-999");
 
+    $('form').submit(function(e) {
+      e.preventDefault();//Eta funktsija otmenit reload
+      $.ajax({// Metod is Jquery
+        type: "POST",//Otpravit na server 
+        url: "mailer/smart.php",//eto kuda budet otpravljatj dannie
+        data: $(this).serialize()// Eto vse AJAX zapros
+        //this eto to s tsem seitsas rabotaem
+      }).done(function () {
+        $(this).find("input").val("");
+        //v etom naiti input so znatseniem i obnulitj proi pomosi trigger reset
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+        $('form').trigger('reset');
+      });
+      return false;
+    });//Eto Frontend otpravki na server
+
   });  //Eto prostoi slider
 // KOntes Slick  
 
