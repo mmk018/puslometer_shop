@@ -86,7 +86,39 @@ $(document).ready(function(){
 
     });
 
+    /* $('#consultation-form').validate();
+    $('#consultation form').validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
 
+      }
+    });
+    $('#order form').validate(); */
+
+    function valideForms(form){
+      $(form).validate({
+        rules: {
+          name: "required",
+          phone: "required",
+          email: {
+            required: true,
+            email: true
+          }
+  
+        }
+      });
+    };
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+
+    $('input[name=phone]').mask("+49 999-999-999");
 
   });  //Eto prostoi slider
 // KOntes Slick  
