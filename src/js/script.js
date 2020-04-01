@@ -155,6 +155,8 @@ $(document).ready(function(){
       return false;
     });//End Scrolling script
 
+    new WOW().init();
+
   });  //Eto prostoi slider
 // KOntes Slick  
 
