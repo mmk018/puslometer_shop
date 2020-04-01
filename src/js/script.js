@@ -130,12 +130,30 @@ $(document).ready(function(){
       }).done(function () {
         $(this).find("input").val("");
         //v etom naiti input so znatseniem i obnulitj proi pomosi trigger reset
-        $('#consultation, #order').fadeOut();
-        $('.overlay, #thanks').fadeIn('slow');
+        $('#consultation, #order').fadeOut();// posle vsego uberet modaljnoe okno
+        $('.overlay, #thanks').fadeIn('slow');//pokazatj thanks i overlay
         $('form').trigger('reset');
       });
+      
       return false;
     });//Eto Frontend otpravki na server
+    
+    
+    /* Smooth scroll and page up */
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+
+    });
+
+    $("a[href^='#']").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
+    });//End Scrolling script
 
   });  //Eto prostoi slider
 // KOntes Slick  
