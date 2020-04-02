@@ -160,11 +160,20 @@
                     top:7px;
 
                 }
+
             }
+            li:last-child {
+                &::before {
+                    display: none;
+                   
+                }
+            }
+
+            
         }
         &__back {
             position: absolute;
-            bottom: 0;
+            bottom: -50px;
             left: 50%;
             transform: translateX(calc(-50% - 19px));
             display: block;
